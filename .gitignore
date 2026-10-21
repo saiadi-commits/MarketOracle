@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Day Trader skill working folder (config, plan, orders, portfolio, state)
+trader/
