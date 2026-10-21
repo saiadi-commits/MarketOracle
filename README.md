@@ -37,3 +37,18 @@ npm run build
 
 Zero-config on [Vercel](https://vercel.com) or [Netlify](https://netlify.com)
 — both auto-detect the Vite build (`npm run build`, output in `dist/`).
+
+## Day Trader skills
+
+The repo ships the eleven project-local Claude Code skills from the
+[Day Trader skill pack](https://github.com/Jakeschincariol/day-trader-skill)
+under `.claude/skills/`: `/trader-scanner`, `/trader-news`, `/trader-entry`,
+`/trader-exit`, `/trader-timemachine`, `/trader-budget`, `/trader-risk`,
+`/trader-broker`, `/trader-alerts`, `/trader-analyst` and `/trader-pelosi`.
+They need Python 3.8+ and nothing to install. Their state lives in a
+gitignored `trader/` folder at the repo root; start from
+`.claude/skills/trader-budget/config.example.json` and put your name and
+email in `sec_user_agent` for the SEC tools.
+
+Paper trading is the default and nothing places an order without your yes.
+Not financial advice. See `.claude/skills/README.md` for the vendored version.
